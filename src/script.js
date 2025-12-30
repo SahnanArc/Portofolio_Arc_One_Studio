@@ -56,7 +56,8 @@ darkToggle.addEventListener("click", function () {
 // agar toggle sesuai mode saat di refresh
 if (
   localStorage.theme === "dark" ||
-  (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+  (!("theme" in localStorage) &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches)
 ) {
   document.querySelector("html").classList.add("dark");
   darkToggle.checked = true;
@@ -85,8 +86,10 @@ if (contactForm) {
     const message = document.getElementById("message")?.value || "";
 
     const subject = encodeURIComponent("Pesan dari " + name);
-    const body = encodeURIComponent(`Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`);
-    const to = "IrfanAqila31@gmail.com";
+    const body = encodeURIComponent(
+      `Nama: ${name}\nEmail: ${email}\n\nPesan:\n${message}`
+    );
+    const to = "msahnansaputra58@gmail.com";
 
     // Fungsi untuk mendeteksi apakah pengguna menggunakan perangkat mobile
     function isMobile() {
@@ -128,3 +131,5 @@ function closePopup() {
 
 // Tombol “Tutup” bisa menutup popup
 closeBtn.addEventListener("click", closePopup);
+
+// slide

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header
+      class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10"
+    >
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#home" class="font-bold text-lg text-indigo block py-6">
+              Arc One Studio</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span class="hamburger-line duration-300 ease-in-out"></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none dark:bg-dark lg:dark:bg-transparent dark:shadow-slate-950"
+            >
+              <ul class="block lg:flex">
+                <!-- group = ketika a di klik, kita bisa ubah prilaku list nya -->
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#portofolio"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Portofolio</a
+                  >
+                </li>
+                <!-- <li class="group">
+                  <a
+                    href="#clients"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo dark:text-white"
+                    >Client</a
+                  >
+                </li> -->
+
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="text-base text-dark py-2 mx-8 flex group-hover:text-indigo transition duration-500 dark:text-white"
+                    >Contact</a
+                  >
+                </li>
+                <li class="mt-3 lg:mt-0 flex items-center pl-8">
+                  <div class="flex">
+                    <span class="mr-2 text-sm text-slate-500">Light</span>
+                    <input type="checkbox" class="hidden" id="dark-toggle" />
+                    <label for="dark-toggle">
+                      <div
+                        class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1"
+                      >
+                        <div
+                          class="toggle-circle h-4 w-4 rounded-full bg-white transition duarition-300 ease-in-out"
+                        ></div>
+                      </div>
+                    </label>
+                    <span class="ml-2 text-sm text-slate-500">Dark</span>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <section
+      id="portofolio"
+      class="lg:pt-36 pt-10 pb-16 bg-indigo50 dark:bg-dark"
+    >
+      <div class="container">
+        <div class="w-full px-5">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4
+              class="font-semibold text-lg text-indigo"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Portofolio
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white"
+              data-aos="zoom-in"
+              data-aos-duration="500"
+            >
+              Project Terbaru
+            </h2>
+          </div>
+        </div>
+        <div class="flex justify-start px-5">
+          <a
+            href="index.html"
+            class="font-semibold md:text-lg text-xs text-indigo400 md:mb-5 mb-2"
+          >
+            ← Kembali ke Halaman Utama</a
+          >
+        </div>
+
+        <div class="w-full flex flex-wrap justify-center">
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="container bg-white dark:bg-slate-800 py-5 px-5 rounded-lg shadow-lg">
+              <h3
+                class="font-bold lg:text-2xl md:xl text-lg text-secondary mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain ikon fakultas FEBI UIN Mataram
+              </h3>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Di Sketchup
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/sketchup.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mt-3 mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Hasil di Lapangan
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/asli.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="container bg-white dark:bg-slate-800 py-5 px-5 rounded-lg shadow-lg">
+              <h3
+                class="font-bold lg:text-2xl md:xl text-lg text-secondary mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Interior Dinas Pendidikan Ruang Unit Pelayanan Terpadu
+              </h3>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Di Sketchup
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/dinas_pendidikan_3D.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mt-3 mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Hasil di Lapangan
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/dinas_pendidikan_asli.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="container bg-white dark:bg-slate-800 py-5 px-5 rounded-lg shadow-lg">
+              <h3
+                class="font-bold lg:text-2xl md:xl text-lg text-secondary mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain PLUT Gomong
+              </h3>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Sketchup
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/desain_PLUT.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+              <!-- <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mt-3 mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Hasil di Lapangan
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/dinas_pendidikan_asli.jpeg"
+                  alt="landing-page"
+                  class="w-full h-96 object-cover"
+                />
+              </div> -->
+            </div>
+          </div>
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="container bg-white dark:bg-slate-800 py-5 px-5 rounded-lg shadow-lg">
+              <h3
+                class="font-bold lg:text-2xl md:xl text-lg text-secondary mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Standarisasi Pegadaian (Kanwil Denpasar)   
+              </h3>
+              <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Desain Skethup Cabang Praya
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/pegadaian.jpeg"
+                  alt="landing-page"
+                  class="w-full lg:h-96 h-52 object-cover"
+                />
+              </div>
+              <!-- <h2
+                class="font-medium lg:text-xl md:lg text-md text-secondary -dark mt-3 mb-3 dark:text-white"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                Hasil di Lapangan
+              </h2>
+              <div
+                class="rounded-md shadow-md overflow-hidden"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              >
+                <img
+                  src="img/portofolio/dinas_pendidikan_asli.jpeg"
+                  alt="landing-page"
+                  class="w-full h-96 object-cover"
+                />
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="src/script.js"></script>
+  </body>
+</html>
