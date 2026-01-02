@@ -130,6 +130,26 @@ function closePopup() {
 }
 
 // Tombol “Tutup” bisa menutup popup
-closeBtn.addEventListener("click", closePopup);
+if (closeBtn) {
+  closeBtn.addEventListener("click", closePopup);
+}
 
-// slide
+
+document.querySelectorAll(".image-slider").forEach((slider) => {
+  const img = slider.querySelector(".slider-img");
+  const images = JSON.parse(slider.dataset.images);
+  const prevBtn = slider.querySelector(".left");
+  const nextBtn = slider.querySelector(".right");
+
+  let index = 0;
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + images.length) % images.length;
+    img.src = images[index];
+  });
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % images.length;
+    img.src = images[index];
+  });
+});

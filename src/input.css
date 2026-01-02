@@ -118,3 +118,29 @@ ul {
 #dark-toggle:checked + label .toggle-circle {
   @apply translate-x-3;
 }
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+.slider-btn:hover {
+  background: rgba(0,0,0,0.85);
+}
